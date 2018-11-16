@@ -1,0 +1,7 @@
+var appleOrangeDist = Infer({
+  model() {
+    return flip(0.9) ? 'apple' : 'orange';
+  }
+});
+
+viz(appleOrangeDist);
