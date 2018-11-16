@@ -1,0 +1,10 @@
+var flip = function(p) {
+  var p = (p !== undefined) ? p : 0.5;
+  return sample(Bernoulli({ p }));
+};
+
+var gaussian = function(mu, sigma) {
+  return sample(Gaussian({ mu, sigma }));
+};
+
+[flip(), gaussian(1, 1)];
